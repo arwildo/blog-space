@@ -28,3 +28,5 @@ urlpatterns = [
 urlpatterns += [
     url(r'^robots\.txt$', TemplateView.as_view(template_name="blogSpace/robots.txt", content_type='text/plain')),
 ]
+
+admin.site.site_header = 'Remember the first rule of Fight Club!'
