@@ -22,14 +22,11 @@ TEMPLATES_DIR = os.path.join(BASE_DIR,'templates')
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = key() 
-RECAPTCHA_PUBLIC_KEY = recapthaPuKey()
-RECAPTCHA_PRIVATE_KEY = recapthaPrKey() 
-NOCAPTCHA = True
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['django-env.mehwk33cpp.us-west-2.elasticbeanstalk.com', '127.0.0.1']
+ALLOWED_HOSTS = ['blog.arwildo.space',' arwildo.space', 'django-env.mehwk33cpp.us-west-2.elasticbeanstalk.com', '127.0.0.1']
 
 
 # Application definition
@@ -42,8 +39,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog',
-    'captcha_admin',
-    'captcha',
 ]
 
 MIDDLEWARE = [

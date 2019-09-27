@@ -8,3 +8,5 @@ class PostAdmin(admin.ModelAdmin):
     prepopulated_fields = {'slug': ('title',)}
   
 admin.site.register(Post, PostAdmin)
+admin.site.site_header = 'Blog Space'
+admin.site.site_title = 'Blog Space'

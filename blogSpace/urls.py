@@ -13,20 +13,17 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-from captcha_admin import admin
+from django.contrib import admin
 from django.urls import path, include
 from django.conf.urls import include, url
 from django.views.generic import TemplateView
-
-admin.autodiscover()
+from .local_settings import loginpage
 
 urlpatterns = [
-    path('fight-club1999', admin.site.urls),
+    path(loginpage(), admin.site.urls),
     path('', include('blog.urls')),
 ]
 
 urlpatterns += [
     url(r'^robots\.txt$', TemplateView.as_view(template_name="blogSpace/robots.txt", content_type='text/plain')),
 ]
-
-admin.site.site_header = 'Remember the first rule of Fight Club!'
