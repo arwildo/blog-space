@@ -1,24 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html>
     {% load static %}
+    <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>404 - arwildo.space</title>
-    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="{% static "img/favicon.png" %}">
     <link rel="stylesheet" type="text/css" href="{% static "404.css" %}">
 </head>
 <body>
     <div class="container">
         <div class="landingLeft">
             <h1>Oops!</h1>
-            <h2>You seem lost young traveler.</h2>
+            <h2>You seem lost, young traveler.</h2>
             <p>Error code: 404</p>
             <a href="http://blog.arwildo.space/">Home</a>
         </div>
         <div class="landingRight">
-            <img src="images/404.svg" alt="404 arwildo.space">
+            <img src="{% static "img/404.svg" %}" alt="404 arwildo.space">
         </div>
     </div>
 </body>
