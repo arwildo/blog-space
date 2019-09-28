@@ -17,13 +17,21 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf.urls import include, url
 from django.views.generic import TemplateView
-from .local_settings import loginpage
+from . import settings
 
-urlpatterns = [
-    path(loginpage(), admin.site.urls),
-    path('', include('blog.urls')),
-]
+
+if settings.ADMIN_ENABLED:
+    urlpatterns = [
+        path('admin/', admin.site.urls), 
+        path('', include('blog.urls')),
+    ]
+else:
+    urlpatterns = [
+        path('', include('blog.urls')),
+    ]
+    
 
 urlpatterns += [
     url(r'^robots\.txt$', TemplateView.as_view(template_name="blogSpace/robots.txt", content_type='text/plain')),
+    url(r'^tinymce/', include('tinymce.urls')),
 ]

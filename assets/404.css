@@ -1,0 +1,123 @@
+/*-------- Global --------*/
+@font-face {
+	src: url(font/CircularStd-Medium.ttf);
+	font-family: CircularStd;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+html {
+	font-family: CircularStd;
+	font-weight: 100;
+}
+body {
+	width: 60%;
+	margin: auto;
+	background-position: top;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.blue {
+	color: #027bff;
+}
+h1 {
+	font-size: 40px;
+	font-weight: 400;
+	color: #17191a;
+}
+h2 {
+	font-size: 35px;
+	font-weight: 400;
+	color: #17191a;
+}
+h5 {
+	font-size: 20px;
+	margin-top: 10px;
+	color: unset;
+}
+p {
+	color: #8f9ea5;
+	opacity: 0.8;
+	font-weight: 100;
+	margin-top: 10px;
+	font-size: 20px;
+}
+/*-------- Scroll bar --------*/
+body::-webkit-scrollbar {
+	width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+	background-color: darkgrey;
+	border-radius: 1px;
+}
+
+div::-webkit-scrollbar {
+	width: 10px;
+}
+
+div::-webkit-scrollbar-thumb {
+	background-color: darkgrey;
+	border-radius: 50px;
+}
+/*-------- Landing --------*/
+.container {
+	margin-top: 25%;
+}
+.landingRight {
+	float: right;
+}
+.landingRight img {
+	width: 25em;
+	right: 0em;
+}
+.landingLeft {
+	float: left;
+	width: 20em;
+}
+.landingLeft a {
+	text-decoration: none;
+	color: #027bff;
+	float: left;
+	margin-top: 0.5em;
+	font-weight: 500;
+}
+
+/*-------- Media Responsive --------*/
+
+/* 
+	##Device = Low Resolution Tablets, Mobiles (Landscape)
+	##Screen = B/w 481px to 767px
+  */
+
+@media (min-width: 481px) and (max-width: 767px) {
+	.landingRight img {
+		width: 15em;
+		margin-top: 2em;
+	}
+}
+
+/* 
+	##Device = Most of the Smartphones Mobiles (Portrait)
+	##Screen = B/w 320px to 490px
+  */
+
+@media (min-width: 320px) and (max-width: 480px) {
+	.landingRight img {
+		width: 15em;
+		margin-top: 2em;
+	}
+}
