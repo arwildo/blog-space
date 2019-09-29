@@ -41,6 +41,6 @@ div::-webkit-scrollbar-thumb {
 	border-radius: 5px;
 }
 /*-------- Navbar --------*/
-.navbar-brand img {
-    width:0.5rem;
+.container-fluid img {
+    width: 64px;
 }
