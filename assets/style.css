@@ -40,3 +40,7 @@ div::-webkit-scrollbar-thumb {
 	background-color: #afafaf;
 	border-radius: 5px;
 }
+/*-------- Navbar --------*/
+.container-fluid img {
+    width: 64px;
+}
