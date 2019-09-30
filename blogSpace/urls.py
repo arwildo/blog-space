@@ -18,7 +18,12 @@ from django.urls import path, include
 from django.conf.urls import include, url
 from django.views.generic import TemplateView
 from . import settings
+from django.contrib.sitemaps.views import sitemap
+from blog.sitemaps import Article_Sitemap
 
+sitemaps = {
+    'article': Article_Sitemap(),
+}
 
 if settings.ADMIN_ENABLED:
     urlpatterns = [
@@ -34,4 +39,5 @@ else:
 urlpatterns += [
     url(r'^robots\.txt$', TemplateView.as_view(template_name="blogSpace/robots.txt", content_type='text/plain')),
     url(r'^tinymce/', include('tinymce.urls')),
+    url(r'^sitemap\.xml$', sitemap, {'sitemaps': sitemaps}, name='django.contrib.sitemaps.views.sitemap'),
 ]
