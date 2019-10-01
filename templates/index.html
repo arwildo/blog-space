@@ -25,8 +25,8 @@
                     <div class="card-body">
                         <h2 class="card-title">{{ post.title }}</h2>
                         <p class="card-text text-muted h6">by {{ post.author }}</p>
-                        <p class="card-text">{{post.content|slice:":600"| safe }}</p>
-                        <a href="{% url 'post_detail' post.slug  %}" class="btn btn-primary">Read More</a>
+                        <p class="card-text article-text">{{post.content|truncatewords:"55"| safe }}</p>
+                        <a href="{% url 'post_detail' post.slug  %}" style="float: right" class="btn btn-primary">Read More</a>
                     </div>
                 </div>
                 {% endfor %}

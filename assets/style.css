@@ -1,6 +1,7 @@
+/*-------- Bootstap --------*/
 body {
     font-family: 'Open Sans', sans-serif;
-    font-size: 17px;
+    font-size: 16px;
     background-color: #fdfdfd;
 }
 .shadow {
@@ -25,22 +26,18 @@ body {
     background-color: #027bff;
     border-color: #027bff; 
 }
-/*-------- Scroll bar --------*/
+/*-------- Global --------*/
+
+/*-------- scroll bar --------*/
 body::-webkit-scrollbar {
-	width: 8px;
+	width: 7px;
 }
 body::-webkit-scrollbar-thumb {
 	background-color: #afafaf;
-	border-radius: 5px;
 }
 div::-webkit-scrollbar {
-	width: 8px;
+	width: 7px;
 }
 div::-webkit-scrollbar-thumb {
 	background-color: #afafaf;
-	border-radius: 5px;
-}
-/*-------- Navbar --------*/
-.container-fluid img {
-    width: 64px;
 }
