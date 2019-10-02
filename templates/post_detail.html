@@ -7,6 +7,13 @@
                 <h1>{% block title %} {{ object.title }} {% endblock title %}</h1>
                 <p class=" text-muted">by {{ post.author }}
                 <p class="card-text ">{{ object.content | safe }}</p>
+                    <div class="social-sharing">
+                        {% load social_share %}
+                        {% post_to_facebook object_or_url "Post to Facebook!" %}
+                        {% post_to_twitter "{{object.title}}. Check it out!" object_or_url "Post to Twitter" %}
+                        {% post_to_linkedin object.title object_or_url "Post to LinkedIn" %}
+                        {% send_email object.title "{{object.title}}. Check it out!" object_or_url "Share via email" %}
+                    </div>
               </div>
             </div>
             {% block sidebar %} {% include 'sidebar.html' %} {% endblock sidebar %}

@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     'blog',
     'tinymce',
     'django.contrib.sitemaps',
-    'taggit'
+    'taggit',
+    'django_social_share',
 ]
 
 MIDDLEWARE = [
