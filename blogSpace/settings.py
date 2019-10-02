@@ -157,3 +157,13 @@ TINYMCE_DEFAULT_CONFIG = {
     'menubar': True,
     'statusbar': True,
     }
+
+# Security
+SECURE_BROWSER_XSS_FILTER = True
+CSRF_COOKIE_SECURE = True
+X_FRAME_OPTIONS = 'DENY'
+SESSION_COOKIE_SECURE = True
+SECURE_CONTENT_TYPE_NOSNIFF = True
+
+# Security warning silenced
+SILENCED_SYSTEM_CHECKS = ["security.W008", "security.W018", "security.W004"]
