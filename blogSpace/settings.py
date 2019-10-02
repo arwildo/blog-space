@@ -25,8 +25,8 @@ TEMPLATES_DIR = os.path.join(BASE_DIR,'templates')
 SECRET_KEY = key() 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-ADMIN_ENABLED  = True
+DEBUG = False
+ADMIN_ENABLED  = False
 
 ALLOWED_HOSTS = ['blog.arwildo.space', 'django-env.mehwk33cpp.us-west-2.elasticbeanstalk.com', '127.0.0.1']
 
@@ -43,7 +43,6 @@ INSTALLED_APPS = [
     'tinymce',
     'django.contrib.sitemaps',
     'taggit',
-    'django_social_share',
 ]
 
 MIDDLEWARE = [
