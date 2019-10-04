@@ -1,0 +1,28 @@
+{% extends "base.html" %} 
+{% load static %}
+    <header class="masthead">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class=" col-md-8 col-md-10 mx-auto">
+                    <div class="site-heading">
+                        <img style="width:200px; float: right;" src="{% static "img/articles.svg" %}" alt="#">
+                        <h3 class=" site-heading my-4 mt-3 text-white">Blog Space</h3>
+                        <p class="text-light">Blog about Programming, Technology, and Cyber Security.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 card mb-4  mt-3 left  top">
+          <div class="card-body">
+            <h1>Title</h1>
+            <p class="card-text "><h3>Test post</h3> test</p>
+          </div>
+        </div>
+        {% block sidebar %} {% include 'sidebar.html' %} {% endblock sidebar %}
+      </div>
+    </div>
