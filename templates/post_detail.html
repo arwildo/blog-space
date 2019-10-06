@@ -1,10 +1,50 @@
-{% extends 'base.html' %} {% block content %}
+<!DOCTYPE html>
+<html>
+{% load static %}
+    <head>
+        <title>{% block title %} {{ object.title }}</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+        <meta name="google" content="notranslate" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Blog about Programming, Web Development, Mobile App Development, Technology, and Cyber Security">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" type="image/x-icon" href="{% static "img/favicon.png" %}">
+        <link rel="stylesheet" type="text/css" href="{% static "style.css" %}" media="all">
+    </head>
+
+    <body>
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow" id="mainNav">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="{% url 'home' %}"><img src="https://i.ibb.co/swNJC2r/blog-arwildo-space.png" alt="Blog Space - Blog about Programming, Web Development, Mobile App Development, Technology, and Cyber Security"></a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item text-black">
+                            <a class="nav-link text-black font-weight-bold" href="{% url 'home' %}">Home</a>
+                        </li>
+                        <li class="nav-item text-black">
+                            <a class="nav-link text-black font-weight-bold" href="#">Policy</a>
+                        </li>
+                        <li class="nav-item text-black">
+                            <a class="nav-link text-black font-weight-bold" href="https://www.arwildo.space" target="_blank">Author</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
         <div class="container">
           <div class="row">
             <div class="col-md-8 card mb-4  mt-3 left  top">
               <div class="card-body">
-                <h1>{% block title %} {{ object.title }} {% endblock title %}</h1>
+                <h1>{{ object.title }} {% endblock title %}</h1>
                 <p class=" text-muted">by {{ post.author }}
                 <p class="card-text ">{{ object.content | safe }}</p>
                 <div class="sharethis-inline-share-buttons"></div>
@@ -14,4 +54,20 @@
           </div>
         </div>
 
-{% endblock content %}
+        <footer class="py-3 bg-grey">
+            <p class="m-0 text-dark text-center ">&copy; arwildo.space</p>
+        </footer>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-51659765-2"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', 'UA-51659765-2');
+        </script>
+        <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=5d94a68923325c0012f73835&product=inline-share-buttons' async='async'></script>
+    </body>
+
+</html>
+
