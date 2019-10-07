@@ -28,6 +28,14 @@ body {
 }
 /*-------- Global --------*/
 
+
+
+/*-------- Index --------*/
+.page-link{
+    border-radius: .25rem;
+}
+
+
 /*-------- scroll bar --------*/
 body::-webkit-scrollbar {
 	width: 7px;

@@ -37,10 +37,12 @@
           <nav aria-label="Page navigation conatiner"></nav>
           <ul class="pagination justify-content-center">
             {% if page_obj.has_previous %}
-            <li><a href="?page={{ page_obj.previous_page_number }}" class="page-link">&laquo; PREV </a></li>
+            <li><a href="?page={{ page_obj.previous_page_number }}" class="page-link"><i class="fa fa-chevron-left"></i> Prev
+            </a></li>
             {% endif %}
             {% if page_obj.has_next %}
-            <li><a href="?page={{ page_obj.next_page_number }}" class="page-link"> NEXT &raquo;</a></li>
+            <li><a href="?page={{ page_obj.next_page_number }}" class="page-link">Next <i class="fa fa-chevron-right"></i>
+            </a></li>
         
             {% endif %}
           </ul>
