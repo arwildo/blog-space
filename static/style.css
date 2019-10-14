@@ -27,8 +27,24 @@ body {
     border-color: #027bff; 
 }
 /*-------- Global --------*/
+#scrollToTop {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  font-size: 13px;
+  border: none;
+  outline: none;
+  background-color: #027bff;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: .25rem;
+}
 
-
+#scrollToTop:hover {
+  background-color: #888;
+}
 
 /*-------- Index --------*/
 .page-link{

@@ -52,6 +52,7 @@
         <!-- Content Goes here -->
         {% endblock content %}
 
+        <button onclick="topFunction()" id="scrollToTop" title="Scroll Up"><i class="fa fa-chevron-up"></i></button>
         <footer class="py-3 bg-grey">
             <p class="m-0 text-dark text-center ">&copy; arwildo.space</p>
         </footer>
@@ -64,15 +65,8 @@
                 integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
                 crossorigin="anonymous">
         </script>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-51659765-2"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-        
-          gtag('config', 'UA-51659765-2');
-        </script>
+        <script type="text/javascript" src="{% static "main.js"%}"></script>
         <script type='text/javascript' 
                 src='https://platform-api.sharethis.com/js/sharethis.js#property=5d94a68923325c0012f73835&product=inline-share-buttons' 
                 async='async'>

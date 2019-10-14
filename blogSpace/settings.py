@@ -168,4 +168,4 @@ SECURE_CONTENT_TYPE_NOSNIFF = True
 SILENCED_SYSTEM_CHECKS = ["security.W008", "security.W018", "security.W004"]
 
 # Added settings
-SESSION_COOKIE_SECURE = False
+#SESSION_COOKIE_SECURE = False
