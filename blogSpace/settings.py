@@ -128,7 +128,6 @@ STATIC_ROOT = 'static'
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'assets'), )
 
 # TinyMCE settings
-
 TINYMCE_DEFAULT_CONFIG = {
     'height': 360,
     'width': 830,
@@ -167,3 +166,6 @@ SECURE_CONTENT_TYPE_NOSNIFF = True
 
 # Security warning silenced
 SILENCED_SYSTEM_CHECKS = ["security.W008", "security.W018", "security.W004"]
+
+# Added settings
+SESSION_COOKIE_SECURE = False
