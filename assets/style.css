@@ -43,7 +43,7 @@ body {
     animation: openScrollBtn .8s;
 }
 
-#scrollToTop:hover {
+#scrollToTop:focus {
     background-color: #888;
 }
 
