@@ -1,28 +1,98 @@
-{% extends "base.html" %} 
+<!DOCTYPE html>
+<html>
 {% load static %}
-    <header class="masthead">
-        <div class="overlay"></div>
-        <div class="container">
-            <div class="row">
-                <div class=" col-md-8 col-md-10 mx-auto">
-                    <div class="site-heading">
-                        <img style="width:200px; float: right;" src="{% static "img/articles.svg" %}" alt="#">
-                        <h3 class=" site-heading my-4 mt-3 text-white">Blog Space</h3>
-                        <p class="text-light">Blog about Programming, Technology, and Cyber Security.
-                        </p>
-                    </div>
+    <head>
+        <title>Policy</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+        <meta name="google" content="notranslate" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" type="image/x-icon" href="{% static "img/favicon.png" %}">
+        <link rel="stylesheet" type="text/css" href="{% static "style.css" %}" media="all">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" 
+              type="text/css">
+    </head>
+
+    <body>
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow" id="mainNav">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="{% url 'home' %}">
+                    <img src="https://i.ibb.co/swNJC2r/blog-arwildo-space.png" 
+                            alt="Blog Space - Blog about Programming, Web Development, 
+                            Mobile App Development, Technology, and Cyber Security">
+                </a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" 
+                        data-target="#navbarResponsive"
+                        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive" style="text-align: right;padding-right: 0.6rem;">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item text-black">
+                            <a class="nav-link text-black font-weight-bold" href="{% url 'home' %}">Home</a>
+                        </li>
+                        <li class="nav-item text-black">
+                            <a class="nav-link text-black font-weight-bold" href="{% url 'policy' %}">Policy</a>
+                        </li>
+                        <li class="nav-item text-black">
+                            <a class="nav-link text-black font-weight-bold" href="https://www.arwildo.space" 
+                                target="_blank">Author</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </div>
-    </header>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8 card mb-4  mt-3 left  top">
-          <div class="card-body">
-            <h1>Title</h1>
-            <p class="card-text "><h3>Test post</h3> test</p>
+        </nav>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 card mb-4  mt-3 left  top">
+              <div class="card-body">
+                <h1>Policy</h1>
+                <p class="card-text ">
+                    <p style="box-sizing: border-box; margin: 0px 0px 20px; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">At Blog Space, accessible from blog.arwildo.space, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that are collected and recorded by Blog Space and how we use it.</p>
+                    <p style="box-sizing: border-box; margin: 0px 0px 20px; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us through email at contact@arwildo.space</p>
+                    <h2 style="box-sizing: border-box; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 400; line-height: 1.1; color: #666666; margin: 0px 0px 18px; font-size: 16px;"><strong>Log Files</strong></h2>
+                    <p style="box-sizing: border-box; margin: 0px 0px 20px; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">Blog Space follows a standard procedure of using log files. These files log visitors when they visit websites. All hosting companies do this and a part of hosting services' analytics. The information collected by log files includes internet protocol (IP) addresses, browser type, Internet Service Provider (ISP), date and time stamp, referring/exit pages, and possibly the number of clicks. These are not linked to any information that is personally identifiable. The purpose of the information is for analyzing trends, administering the site, tracking users' movement on the website, and gathering demographic information.</p>
+                    <h2 style="box-sizing: border-box; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 400; line-height: 1.1; color: #666666; margin: 0px 0px 18px; font-size: 16px;"><strong>Privacy Policies</strong></h2>
+                    <p style="box-sizing: border-box; margin: 0px 0px 20px; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">Third-party ad servers or ad networks uses technologies like cookies, JavaScript, or Web Beacons that are used in their respective advertisements and links that appear on Blog Space, which are sent directly to users' browser. They automatically receive your IP address when this occurs. These technologies are used to measure the effectiveness of their advertising campaigns and/or to personalize the advertising content that you see on websites that you visit.</p>
+                    <p style="box-sizing: border-box; margin: 0px 0px 20px; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">Note that Blog Space has no access to or control over these cookies that are used by third-party advertisers.</p>
+                    <h2 style="box-sizing: border-box; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 400; line-height: 1.1; color: #666666; margin: 0px 0px 18px; font-size: 16px;"><strong>Third-Party Privacy Policies</strong></h2>
+                    <p style="box-sizing: border-box; margin: 0px 0px 20px; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">Blog Space's Privacy Policy does not apply to other advertisers or websites. Thus, we are advising you to consult the respective Privacy Policies of these third-party ad servers for more detailed information. It may include their practices and instructions about how to opt-out of certain options. You may find a complete list of these Privacy Policies and their links here: Privacy Policy Links.</p>
+                    <p style="box-sizing: border-box; margin: 0px 0px 20px; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">You can choose to disable cookies through your individual browser options. To know more detailed information about cookie management with specific web browsers, it can be found at the browsers' respective websites. What Are Cookies?</p>
+                    <h2 style="box-sizing: border-box; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 400; line-height: 1.1; color: #666666; margin: 0px 0px 18px; font-size: 16px;"><strong>Online Privacy Policy Only</strong></h2>
+                    <p style="box-sizing: border-box; margin: 0px 0px 20px; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">This Privacy Policy applies only to our online activities and is valid for visitors to our website with regards to the information that they shared and/or collect in Blog Space. This policy is not applicable to any information collected offline or via channels other than this website.</p>
+                    <h2 style="box-sizing: border-box; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 400; line-height: 1.1; color: #666666; margin: 0px 0px 18px; font-size: 16px;"><strong>Consent</strong></h2>
+                    <p style="box-sizing: border-box; margin: 0px 0px 20px; color: #666666; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">By using our website, you hereby consent to our Privacy Policy and agree to its Terms and Conditions.</p>
+                </p>
+              </div>
+            </div>
+            {% block sidebar %} {% include 'sidebar.html' %} {% endblock sidebar %}
           </div>
         </div>
-        {% block sidebar %} {% include 'sidebar.html' %} {% endblock sidebar %}
-      </div>
-    </div>
+
+        <button onclick="topFunction()" id="scrollToTop" title="Scroll Up"><i class="fa fa-chevron-up"></i></button>
+        <footer class="py-3 bg-grey">
+            <p class="m-0 text-dark text-center ">&copy; arwildo.space</p>
+        </footer>
+        <!--   JS   -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js" 
+                integrity="sha256-rsPUGdUPBXgalvIj4YKJrrUlmLXbOb6Cp7cdxn1qeUc=" 
+                crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+                integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
+                crossorigin="anonymous">
+        </script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-51659765-2"></script>
+        <script type="text/javascript" src="{% static "main.js"%}"></script>
+        <script type='text/javascript' 
+                src='https://platform-api.sharethis.com/js/sharethis.js#property=5d94a68923325c0012f73835&product=inline-share-buttons' 
+                async='async'>
+        </script>
+    </body>
+
+</html>
