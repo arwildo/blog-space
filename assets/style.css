@@ -26,6 +26,21 @@ body {
     background-color: #027bff;
     border-color: #027bff; 
 }
+
+/*-------- scroll bar --------*/
+body::-webkit-scrollbar {
+	width: 7px;
+}
+body::-webkit-scrollbar-thumb {
+	background-color: #afafaf;
+}
+div::-webkit-scrollbar {
+	width: 7px;
+}
+div::-webkit-scrollbar-thumb {
+	background-color: #afafaf;
+}
+
 /*-------- Global --------*/
 #scrollToTop {
     display: none;
@@ -61,16 +76,3 @@ body {
 }
 
 
-/*-------- scroll bar --------*/
-body::-webkit-scrollbar {
-	width: 7px;
-}
-body::-webkit-scrollbar-thumb {
-	background-color: #afafaf;
-}
-div::-webkit-scrollbar {
-	width: 7px;
-}
-div::-webkit-scrollbar-thumb {
-	background-color: #afafaf;
-}
