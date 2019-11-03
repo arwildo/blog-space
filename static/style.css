@@ -65,14 +65,16 @@ div::-webkit-scrollbar-thumb {
 @keyframes openScrollBtn {
     from {
         opacity: 0;
+    }
     to {
         opacity: 1;
     }
 }
 
 /*-------- Index --------*/
-.page-link{
+.page-link {
     border-radius: .25rem;
 }
-
-
+.card-title .card-text {
+    display: grid;
+}
