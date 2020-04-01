@@ -5,7 +5,9 @@ Blog about Programming, Web Development, Mobile App Development, Technology, and
 
 
 ## Preview
-![alt text](https://www.arwildo.space/assets/images/blog-space.png "Website Preview")
+<p align="center">
+  <img src="https://www.arwildo.space/assets/images/blog-space.png?raw=true" alt="Website Preview"/>
+</p>
 
 
 ## Built With
