@@ -1,5 +1,5 @@
 # Blog Space
-Blog about Programming, Web Development, Mobile App Development, Technology, and Cyber Security.
+Simple Blog Application built with Django and styled with Bootstrap.
 
 
 ## Preview
