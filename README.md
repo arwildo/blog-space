@@ -1,8 +1,6 @@
 # Blog Space
 Blog about Programming, Web Development, Mobile App Development, Technology, and Cyber Security.
 
-:blue_book: [Blog Space](https://blog.arwildo.com)
-
 
 ## Preview
 <p align="center">
