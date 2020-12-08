@@ -1,5 +1,5 @@
 # Blog Space
-Simple Blog Application built with Django and styled with Bootstrap.
+Simple and clean Blog Application built with Django and styled with Bootstrap.
 
 
 ## Preview
