@@ -20,7 +20,7 @@ Simple and Clean Blog Application built with Django and styled with Bootstrap.
 git clone https://github.com/arwildo/blog-space
 ```
 
-2. add your SECRET_KEY to blogSpace/.local_settings
+2. add your django secret key to `blogSpace/.local_settings`
 
 ```python
 def key():
