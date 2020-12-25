@@ -80,7 +80,6 @@ Control.ca-bundle
 Control.system-ca-bundle 
 
 # Local files
-blogSpace/local_settings.py
 requirements.txt
 templates/blogSpace/robots.txt
 
