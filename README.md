@@ -1,5 +1,5 @@
 # Blog Space
-Simple and clean Blog Application built with Django and styled with Bootstrap.
+Simple and Clean Blog Application built with Django and styled with Bootstrap.
 
 
 ## Preview
@@ -8,14 +8,30 @@ Simple and clean Blog Application built with Django and styled with Bootstrap.
 </p>
 
 
-## Built With
+## Requirements
+* Python3
+* Django
 
-* HTML
-* CSS
-* JavaScript
-* [Django 2](https://github.com/django/django)
-* [Bootrap 4](https://github.com/twbs/bootstrap)
+## Installing
 
+1. Clone the repo
+
+```
+git clone https://github.com/arwildo/blog-space
+```
+
+2. add your SECRET_KEY to blogSpace/.local_settings
+
+```python
+def key():
+    return "SECRET_KEY"
+```
+
+3. Start the server
+
+```
+python3 manage.py runserver
+```
 
 ## Support
 
