@@ -4,7 +4,7 @@ Simple and Clean Blog Application built with Django and styled with Bootstrap.
 
 ## Preview
 <p align="center">
-  <img src="https://arwildo.github.io/assets/images/blog-space.png?raw=true" alt="Website Preview"/>
+  <img src="https://raw.githubusercontent.com/arwildo/blue-bubble/refs/heads/main/public/assets/images/blog-space.png" alt="Website Preview"/>
 </p>
 
 
